@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Lost and Found Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .profile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        .profile-info {
+            max-width: 400px;
+        }
+        .profile-info p {
+            margin: 8px 0;
+        }
+        .profile-actions {
+            margin-bottom: 20px;
+        }
+        .profile-actions button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+        .profile-actions button:hover {
+            background-color: #005bb5;
+        }
+        .items-section {
+            margin-top: 20px;
+        }
+        .items-section h3 {
+            color: #0073e6;
+        }
+        .item-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .item-list li {
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .logout-btn {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .logout-btn:hover {
+            background-color: darkred;
+        }
+        footer {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lost and Found Portal</h1>
+    </header>
+
+    <div class="container">
+        <!-- User Profile Section -->
+        <div class="profile-header">
+            <img src="user-avatar.jpg" alt="User Avatar">
+            <div class="profile-info">
+                <h2>John Doe</h2>
+                <p><strong>Email:</strong> johndoe@example.com</p>
+                <p><strong>Location:</strong> New York, USA</p>
+                <p><strong>Joined:</strong> January 2023</p>
+            </div>
+        </div>
+
+        <!-- Profile Actions -->
+        <div class="profile-actions">
+            <button>Edit Profile</button>
+        </div>
+
+        <div class="items-section">
+            <h3>My Listed Items</h3>
+            <ul class="item-list">
+                <li>
+                    <strong>Lost Item:</strong> Brown Wallet
+                    <p><strong>Description:</strong> Leather wallet with ID and credit cards.</p>
+                    <p><strong>Status:</strong> Pending Recovery</p>
+                </li>
+                <li>
+                    <strong>Found Item:</strong> Black Umbrella
+                    <p><strong>Description:</strong> Compact umbrella found near Central Park.</p>
+                    <p><strong>Status:</strong> Awaiting Pickup</p>
+                </li>
+                <!-- More items can be added here -->
+            </ul>
+        </div>
+
+        <div class="items-section">
+            <h3>History of Lost & Found Items</h3>
+            <ul class="item-list">
+                <li>
+                    <strong>Lost Item:</strong> Blue Backpack
+                    <p><strong>Status:</strong> Found and Returned</p>
+                </li>
+                <li>
+                    <strong>Found Item:</strong> Red Scarf
+                    <p><strong>Status:</strong> Unclaimed</p>
+                </li>
+                <!-- More items can be added here -->
+            </ul>
+        </div>
+
+        <!-- Logout Button -->
+        <div>
+            <button class="logout-btn">Logout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Lost and Found Portal | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
